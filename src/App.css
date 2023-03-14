@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.swiper-pagination {
+  text-align: left !important;
+  left: 11.7% !important;
+  bottom: 10% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF !important;
+  width: 1vw !important;
+  height: 1vw !important;
+}
+
+.swiper-pagination-bullet {
+  width: 1vw !important;
+  height: 1vw !important;
+}
