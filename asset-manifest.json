@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gree-commerce/static/css/main.15226347.css",
+    "main.js": "/gree-commerce/static/js/main.cc1e6027.js",
+    "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
+    "index.html": "/gree-commerce/index.html",
+    "main.15226347.css.map": "/gree-commerce/static/css/main.15226347.css.map",
+    "main.cc1e6027.js.map": "/gree-commerce/static/js/main.cc1e6027.js.map",
+    "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15226347.css",
+    "static/js/main.cc1e6027.js"
+  ]
+}
