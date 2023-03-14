@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SatoshiVariable';
+  src: local("SatoshiVariable"), url("./assets/fonts/Satoshi/Satoshi-Variable.ttf") format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SatoshiRegular';
+  src: local("SatoshiRegular"), url("./assets/fonts/Satoshi/Satoshi-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SatoshiBold';
+  src: local("SatoshiBold"), url("./assets/fonts/Satoshi/Satoshi-Bold.ttf") format('truetype');
+  font-weight: 700;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
