@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/gree-commerce/static/css/main.15226347.css",
-    "main.js": "/gree-commerce/static/js/main.cc1e6027.js",
+    "main.css": "/gree-commerce/static/css/main.82d250ce.css",
+    "main.js": "/gree-commerce/static/js/main.cdc1bdbe.js",
     "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
+    "static/media/Satoshi-Variable.ttf": "/gree-commerce/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
+    "static/media/Satoshi-Regular.ttf": "/gree-commerce/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
+    "static/media/Satoshi-Bold.ttf": "/gree-commerce/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
+    "static/media/img (3).jpg": "/gree-commerce/static/media/img (3).c0e6ebf6926558b5367a.jpg",
+    "static/media/img (6).jpg": "/gree-commerce/static/media/img (6).3e283bc767e75893788f.jpg",
+    "static/media/img (2).jpg": "/gree-commerce/static/media/img (2).c15a25ba5416489016c0.jpg",
     "index.html": "/gree-commerce/index.html",
-    "main.15226347.css.map": "/gree-commerce/static/css/main.15226347.css.map",
-    "main.cc1e6027.js.map": "/gree-commerce/static/js/main.cc1e6027.js.map",
+    "main.82d250ce.css.map": "/gree-commerce/static/css/main.82d250ce.css.map",
+    "main.cdc1bdbe.js.map": "/gree-commerce/static/js/main.cdc1bdbe.js.map",
     "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15226347.css",
-    "static/js/main.cc1e6027.js"
+    "static/css/main.82d250ce.css",
+    "static/js/main.cdc1bdbe.js"
   ]
 }
