@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/gree-commerce/static/css/main.7d35f9c4.css",
-    "main.js": "/gree-commerce/static/js/main.e013546f.js",
+    "main.css": "/gree-commerce/static/css/main.9c3a52da.css",
+    "main.js": "/gree-commerce/static/js/main.67ad38bc.js",
     "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
+    "static/media/login.jpg": "/gree-commerce/static/media/login.a9853b90a0bd9667cf83.jpg",
     "static/media/caro1.jpg": "/gree-commerce/static/media/caro1.82d9b8aeed9853dbca25.jpg",
     "static/media/Satoshi-Variable.ttf": "/gree-commerce/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
     "static/media/spice5.jpg": "/gree-commerce/static/media/spice5.873535ab90759a26edc5.jpg",
@@ -13,13 +14,15 @@
     "static/media/spice3.jpg": "/gree-commerce/static/media/spice3.8cc278a04512d03e3d9c.jpg",
     "static/media/Satoshi-Regular.ttf": "/gree-commerce/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
     "static/media/Satoshi-Bold.ttf": "/gree-commerce/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
+    "static/media/google.png": "/gree-commerce/static/media/google.d3bd957f7bce9257e734.png",
+    "static/media/back.jpg": "/gree-commerce/static/media/back.5e2c886d0d5fa5802b93.jpg",
     "index.html": "/gree-commerce/index.html",
-    "main.7d35f9c4.css.map": "/gree-commerce/static/css/main.7d35f9c4.css.map",
-    "main.e013546f.js.map": "/gree-commerce/static/js/main.e013546f.js.map",
+    "main.9c3a52da.css.map": "/gree-commerce/static/css/main.9c3a52da.css.map",
+    "main.67ad38bc.js.map": "/gree-commerce/static/js/main.67ad38bc.js.map",
     "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d35f9c4.css",
-    "static/js/main.e013546f.js"
+    "static/css/main.9c3a52da.css",
+    "static/js/main.67ad38bc.js"
   ]
 }
