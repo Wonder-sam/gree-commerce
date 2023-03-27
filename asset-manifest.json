@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/gree-commerce/static/css/main.82d250ce.css",
-    "main.js": "/gree-commerce/static/js/main.cdc1bdbe.js",
+    "main.css": "/gree-commerce/static/css/main.7d35f9c4.css",
+    "main.js": "/gree-commerce/static/js/main.e013546f.js",
     "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
+    "static/media/caro1.jpg": "/gree-commerce/static/media/caro1.82d9b8aeed9853dbca25.jpg",
     "static/media/Satoshi-Variable.ttf": "/gree-commerce/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
+    "static/media/spice5.jpg": "/gree-commerce/static/media/spice5.873535ab90759a26edc5.jpg",
+    "static/media/spice4.jpg": "/gree-commerce/static/media/spice4.84b58e582e780c07dc02.jpg",
+    "static/media/spice1.jpg": "/gree-commerce/static/media/spice1.75aec7f83125a46eb23f.jpg",
+    "static/media/spice2.jpg": "/gree-commerce/static/media/spice2.b68e7da3b4f33aba8f7b.jpg",
+    "static/media/caro2.jpg": "/gree-commerce/static/media/caro2.043862aa624feb5d618e.jpg",
+    "static/media/spice3.jpg": "/gree-commerce/static/media/spice3.8cc278a04512d03e3d9c.jpg",
     "static/media/Satoshi-Regular.ttf": "/gree-commerce/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
     "static/media/Satoshi-Bold.ttf": "/gree-commerce/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
-    "static/media/img (3).jpg": "/gree-commerce/static/media/img (3).c0e6ebf6926558b5367a.jpg",
-    "static/media/img (6).jpg": "/gree-commerce/static/media/img (6).3e283bc767e75893788f.jpg",
-    "static/media/img (2).jpg": "/gree-commerce/static/media/img (2).c15a25ba5416489016c0.jpg",
     "index.html": "/gree-commerce/index.html",
-    "main.82d250ce.css.map": "/gree-commerce/static/css/main.82d250ce.css.map",
-    "main.cdc1bdbe.js.map": "/gree-commerce/static/js/main.cdc1bdbe.js.map",
+    "main.7d35f9c4.css.map": "/gree-commerce/static/css/main.7d35f9c4.css.map",
+    "main.e013546f.js.map": "/gree-commerce/static/js/main.e013546f.js.map",
     "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82d250ce.css",
-    "static/js/main.cdc1bdbe.js"
+    "static/css/main.7d35f9c4.css",
+    "static/js/main.e013546f.js"
   ]
 }
