@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gree-commerce/static/css/main.9c3a52da.css",
-    "main.js": "/gree-commerce/static/js/main.67ad38bc.js",
+    "main.css": "/gree-commerce/static/css/main.b33fdf50.css",
+    "main.js": "/gree-commerce/static/js/main.fccb187d.js",
     "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
     "static/media/login.jpg": "/gree-commerce/static/media/login.a9853b90a0bd9667cf83.jpg",
     "static/media/caro1.jpg": "/gree-commerce/static/media/caro1.82d9b8aeed9853dbca25.jpg",
@@ -17,12 +17,12 @@
     "static/media/google.png": "/gree-commerce/static/media/google.d3bd957f7bce9257e734.png",
     "static/media/back.jpg": "/gree-commerce/static/media/back.5e2c886d0d5fa5802b93.jpg",
     "index.html": "/gree-commerce/index.html",
-    "main.9c3a52da.css.map": "/gree-commerce/static/css/main.9c3a52da.css.map",
-    "main.67ad38bc.js.map": "/gree-commerce/static/js/main.67ad38bc.js.map",
+    "main.b33fdf50.css.map": "/gree-commerce/static/css/main.b33fdf50.css.map",
+    "main.fccb187d.js.map": "/gree-commerce/static/js/main.fccb187d.js.map",
     "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c3a52da.css",
-    "static/js/main.67ad38bc.js"
+    "static/css/main.b33fdf50.css",
+    "static/js/main.fccb187d.js"
   ]
 }
