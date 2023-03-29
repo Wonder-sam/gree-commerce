@@ -1,72 +1,158 @@
-import won8 from './assets/won (8).JPG'
-import won1 from './assets/won (1).JPG'
-import won2 from './assets/won (2).JPG'
-import won3 from './assets/won (3).JPG'
-import won4 from './assets/won (4).JPG'
-import won5 from './assets/won (5).JPG'
-import won6 from './assets/won (6).JPG'
-import won7 from './assets/won (7).JPG'
-import caro1 from './assets/caro (1).JPG'
-import caro2 from './assets/caro (2).JPG'
-import caro3 from './assets/caro (3).JPG'
-import caro4 from './assets/caro (4).JPG'
-import caro5 from './assets/caro (5).JPG'
-import caro6 from './assets/caro (6).JPG'
-import caro7 from './assets/caro (7).JPG'
-import caro8 from './assets/caro (8).JPG'
-import caro9 from './assets/caro (9).JPG'
-import caro10 from './assets/caro (10).JPG'
+import caro1 from './assets/caro1.jpg'
+import caro2 from './assets/caro2.jpg'
+import spice1 from './assets/spice1.jpg'
+import spice2 from './assets/spice2.jpg'
+import spice3 from './assets/spice3.jpg'
+import spice4 from './assets/spice4.jpg'
+import spice5 from './assets/spice5.jpg'
+import haven from './assets/haven.jpg'
+import haven1 from './assets/haven1.jpg'
+import haven2 from './assets/haven2.jpg'
+import haven3 from './assets/haven3.jpg'
+import haven4 from './assets/haven4.jpg'
+import ginger from './assets/ginger.jpg'
 
 export const categories = [
     {
-        name: "Wonder",
+        category: "Spices",
         description: "backpacks, sidebags, waist bags and many more",
-        img: won1
+        img: haven,
+        products: [
+            {
+                name: "Side Bag",
+                price: 44.99,
+                image: spice1,
+            },
+            {
+                name: "Side Bag",
+                price: 44.99,
+                image: spice1,
+            },
+            {
+                name: "Side Bag",
+                price: 44.99,
+                image: spice1,
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won2
+        category: "Shrimp Spices",
+        description: "smart phones, Tablets, Ipads, Ipods, Accessories",
+        img: haven1,
+        products: [
+            {
+                name: "Samsung Galaxy S8 Armor Case",
+                price: 44.99,
+                image: spice2,
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won3
+        category: "Garlic Spices",
+        description: "wrist watches, necklaces, earrings, anklets",
+        img: haven2,
+        products: [
+            {
+                name: "Leather Bracelet",
+                price: 44.99,
+                image: spice3,
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won4
+        category: "Pepper Spices",
+        description: "shirts, t-shirsts, shorts, trousers, sweatpants",
+        img: haven3,
+        products: [
+            {
+                name: "Polo T-Shirt",
+                price: 44.99,
+                image: spice5,
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won5
+        category: "Ginger Spices",
+        description: "shirts, t-shirsts, shorts, trousers, sweatpants",
+        img: haven4,
+        products: [
+            {
+                name: "Badia Ginger Spice",
+                price: 44.99,
+                image: ginger,
+            }
+        ]
+    },
+]
+
+export const recipes = [
+    {
+        recipe: 'Jollof Rice',
+        origin: 'Ghanaian, Nigerian',
+        img: spice1,
+        products: [
+            {
+                name: 'Ghanaian Jollof',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven
+            },
+            {
+                name: 'Nigerian Jollof',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven2
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won6
+        recipe: 'Waakye',
+        origin: 'Ghanaian',
+        img: spice2,
+        products: [
+            {
+                name: 'Ghanaian Waakye',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven1
+            }
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won7
+        recipe: 'Fried Rice',
+        origin: 'Italian, German',
+        img: spice3,
+        products: [
+            {
+                name: 'Italian Fried Rice',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven3
+            },
+            {
+                name: 'German Fried Rice',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven4
+            },
+        ]
     },
     {
-        name: "Wonder",
-        description: "backpacks, sidebags, waist bags and many more",
-        img: won8
-    }
+        recipe: 'Beans (Gob3)',
+        origin: 'Ghanaian',
+        img: spice4,
+        products: [
+            {
+                name: 'Ghanaian Beans',
+                type: 'Standard Package',
+                price: 'five miilion',
+                image: haven
+            }
+        ]
+    },
 ]
 
 export const caro =[
-    {
-        img: caro1,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
     {
         img: caro2,
         title: "19BX Backpack",
@@ -74,52 +160,9 @@ export const caro =[
         alt: "19BX backpack"
     },
     {
-        img: caro3,
+        img: caro1,
         title: "19BX Backpack",
         info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
         alt: "19BX backpack"
     },
-    {
-        img: caro4,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro5,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro6,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro7,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro8,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro9,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-    {
-        img: caro10,
-        title: "19BX Backpack",
-        info: "The all new awaited bag of the season. The 19BX Backpack. Grap yours now @ 12% discount !!!",
-        alt: "19BX backpack"
-    },
-
 ]
