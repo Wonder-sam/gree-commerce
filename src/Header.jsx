@@ -1,37 +1,76 @@
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLoaderData, useNavigate } from 'react-router-dom';
+import { auth } from './firebase';
 
 export default function Header () {
+    const navigate = useNavigate();
     const sideMenu = React.useRef(null)
+    const options = React.useRef(null)
     const activeClassName = "underline font-[SatoshiVariable] decoration-[#F4511E] text-[#F4511E] underline-offset-[13px] decoration-2"
     const inactiveClassName = "font-[SatoshiRegular]"
-    const activeIcon = "text-[#F4511E]"
-    const inactiveIcon = "text-black"
+    // const activeIcon = "text-[#F4511E]"
+    // const inactiveIcon = "text-white"
+    const user = useLoaderData();
+
+  
+
+    const logout=()=>{
+        signOut(auth).then(() => {
+            // Sign-out successful.
+            navigate('/Explore')
+          }).catch((error) => {
+            // An error happened.
+          });
+    }
+
     const openMenu=()=>{
         sideMenu.current.classList.remove("hidden")
     }
     const closeMenu=()=>{
         sideMenu.current.classList.add("hidden")
     }
+
+    const showOptions=()=>{
+        options.current.classList.remove("hidden")
+    }
     return (
         <div className='w-full flex flex-col'>
-            <div className="w-full md:w-[80%] py-8 px-4 md:px-0 z-[2] text-xl self-center flex border-b justify-between items-center border-white border-solid">
-                <div onClick={()=>openMenu()}>
+            <div className="w-full py-6 px-6 md:px-0 z-[2] text-xl self-center flex justify-between items-center">
+                <div className="md:hidden" onClick={()=>openMenu()}>
                     <p>🍫</p>
                 </div>
-                <div className="bg-[#F4511E] flex w-fit md:w-[20%] p-4 justify-center rounded-xl">
-                    <p className="w-full md:w-[90%] font-[SatoshiBold] text-white text-xl">Gree-Commerce</p>
+                <div className="flex w-fit p-4 sm:mr-[2%] xl:mr-[10%] ml-[2%] md:ml-[5%] justify-center rounded-xl">
+                    <p className="w-full font-[SatoshiBold] text-[#F4511E] font-bold text-2xl md:text-xl">Gree-Commerce</p>
                 </div>
-                <ul className="hidden md:flex w-[40%] justify-between items-end text-black mr-[5%]">
+                <ul className="hidden md:flex w-[40%] text-base justify-between items-end text-black sm:mr-[5%] xl:mr-[15%]">
                     <li><NavLink to="Explore" className={({isActive})=>isActive? activeClassName: inactiveClassName}>Explore</NavLink></li>
                     <li><NavLink to="Product" className={({isActive})=>isActive? activeClassName: inactiveClassName}>Products</NavLink></li>
                     <li><NavLink to="News" className={({isActive})=>isActive? activeClassName: inactiveClassName}>News</NavLink></li>
                     <li><NavLink to="ContactUs" className={({isActive})=>isActive? activeClassName: inactiveClassName}>Contact Us</NavLink></li>
                 </ul>
-                <ul className="flex w-[7%] justify-between items-end text-black mr-[5%] ">
-                    <li><NavLink to="Cart" className={({isActive})=>isActive? activeIcon: inactiveIcon}><i className='book'>cart</i></NavLink></li>
-                    <li><NavLink to="Notification" className={({isActive})=>isActive? activeIcon: inactiveIcon}><i className='book'>bell</i></NavLink></li>
-                </ul>
+                {
+                    user===null?
+                    <div className=' sm:hidden p-4 rounded-full bg-orange-500' />
+                    :
+                    null
+                }
+                {
+                    user===null?
+                    <ul className="hidden sm:flex w-fit justify-between items-end text-black mr-[5%] ">
+                        <li><NavLink to="SignIn" className='border-2 border-[#F4511E] text-[#F4511E] font-[400w] p-2 px-6 text-center rounded-md'>Sign In</NavLink></li>
+                    </ul>
+                    :
+                    <div className='mr-[5%] flex relative items-center'>
+                        <p onClick={()=>showOptions()} className='w-[4.7em] h-[1.5em] text-base text-ellipsis overflow-hidden'>{user.displayName}</p>
+                        <ul ref={options} className=' hidden p-4 absolute zIndex-200 top-12 right-20 w-[12vw] bg-white border rounded-md text-base shadow-[4px_4px_2px_rgba(0,0,0,0.5)]'>
+                            <li><p onClick={()=>logout()}>Logout</p></li>
+                        </ul>
+                        <div className='bg-[#F4511E] rounded-full p-4'>
+                            <p className='text-white'>{user.displayName.split(' ')[0].charAt(0)+user.displayName.split(' ')[1].charAt(0)}</p>
+                        </div>
+                    </div>
+                }
             </div>
             <div ref={sideMenu} className='hidden z-[2] fixed top-0 w-full left-0 bottom-0 bg-white  py-16 px-8'>
                 <div className="flex w-full justify-between mb-8">
@@ -45,6 +84,7 @@ export default function Header () {
                     <li onClick={()=>closeMenu()}><NavLink to="Product" className={({isActive})=>isActive? activeClassName: inactiveClassName}>Products</NavLink></li>
                     <li onClick={()=>closeMenu()}><NavLink to="News" className={({isActive})=>isActive? activeClassName: inactiveClassName}>News</NavLink></li>
                     <li onClick={()=>closeMenu()}><NavLink to="ContactUs" className={({isActive})=>isActive? activeClassName: inactiveClassName}>Contact Us</NavLink></li>
+                    <li><NavLink to="SignIn" className=' sm:hidden border-2 border-[#F4511E] text-[#F4511E] font-[400w] p-2 px-6 text-center rounded-md'>Sign In</NavLink></li>
                 </ul> 
             </div>
             <Outlet />
