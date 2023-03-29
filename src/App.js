@@ -1,64 +1,84 @@
-
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import React from 'react'
+import { Navigation, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './App.css';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { caro, categories } from './dummydata';
+import 'swiper/css/navigation';
+import { caro } from './dummydata';
+import { Link, useLoaderData } from 'react-router-dom';
 
 function App() {
+  const categories = useLoaderData();
+
   return (
-    <div className="w-full">
+    <div className="w-[90%] self-center">
       <Swiper
-        // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={0}
         slidesPerView={1}
         autoplay={{
           delay: 5000
         }}
+        className="w-full rounded-3xl border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.8)]"
         loop={true}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={true}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
-    >
+      >
         {
          caro.map((car, index)=>(
             <SwiperSlide key={index}>
               <div className='relative flex items-center bg-[rgba(244,81,30,0.07)] w-full'>
-                <div className='fixed top-0 right-0 left-[40%] bottom-0 bg-[rgb(0,0,0,0.5)]'></div>
-                <div className='w-[40%] flex flex-col justify-center align-center h-[80vh] bg-[#F4511E] text-white px-8 py-12'>
-                  <p className='font-[SatoshiBold] text-4xl leading-[4rem]'>{car.title}</p>
-                  <p className='font-[SatoshiRegular] text-2xl'>{car.info}</p>
-                </div>
-                <img src={car.img} className="object-cover w-[60%] h-[80vh]" alt={car.alt} />
+                <div className='fixed top-0 right-0 left-[50%] bottom-0 bg-[rgb(0,0,0,0.1)]'></div>
+                <img src={car.img} className="object-cover w-full xl:h-[40vw] h-[80vw]" alt={car.alt} />
               </div>
             </SwiperSlide>
           ))
         }
       </Swiper>
 
-      <div className='mt-16 px-[5%]'>
-        <div className='flex justify-between'>
-          <div className='bg-[#F4511E] rounded-tr-2xl w-fit pl-2 pr-8 py-2 mb-4'>
-            <p className='font-[SatoshiVariable] text-[600] text-white md:text-lg xl:text-2xl'>Product Categories</p>
-          </div>
-          <div className=' rounded-tl-2xl w-fit pl-2 pr-8 py-2 mb-4'>
-            <p className='font-[SatoshiVariable] text-[600] text-[#F4511E] md:text-lg xl:text-2xl'>Show All</p>
-          </div>
+      <div className='mt-8 xl:mt-16 pb-8'>
+        <div className='w-full pl-2 pr-2 py-2 mb-4 flex justify-center items-center'>
+          <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
+          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] md:text-lg xl:text-2xl mx-8'>Haven Spices</p>
+          <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-8'>
           {
-            categories.map((cat,index)=>(
-              <div key={index} className=' h-[55vw] md:h-[40vw] lg:h-[30vw] xl:h-[27vw] bg-white rounded-lg overflow-hidden border border-gray shadow-[0px_0px_25px_rgba(217,225,244,0.76)]'>
-                <img src={cat.img} className="object-cover w-full h-[38vw] md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
-                <div className="px-2 pt-2">
-                  <p className='font-[SatoshiVariable] text-[600]'>{cat.name}</p>
-                  <p className='text-sm font-[SatoshiRegular] text-red italic'>{cat.description}</p>
+            categories[0].map((cat,index)=>(
+              <Link to={`/Product/spices/${index}`}>
+                <div key={index} className='h-fit pb-2 bg-white rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
+                  <img src={cat.img} className="object-cover w-full aspect-square md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
+                  <div className="px-2 pt-2">
+                    <p className='font-[SatoshiVariable] text-[600]'>{cat.category}</p>
+                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] italic w-full max-h-[3em] text-ellipsis overflow-hidden'>{cat.description}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
+            ))
+          }
+        </div>
+      </div>
+
+      <div className='mt-8 xl:mt-16 pb-8'>
+        <div className='w-full pl-2 pr-2 py-2 mb-4 flex justify-center items-center'>
+          <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
+          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] md:text-lg xl:text-2xl mx-8'>Recipe Packages</p>
+          <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
+        </div>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-8'>
+          {
+            categories[1].map((cat,index)=>(
+              <Link to={`/Product/recipes/${index}`}>
+                <div key={index} className='h-fit pb-2 bg-white rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
+                  <img src={cat.img} className="object-cover w-full aspect-square md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
+                  <div className="px-2 pt-2">
+                    <p className='font-[SatoshiVariable] text-[600]'>{cat.recipe}</p>
+                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] italic w-full max-h-[3em] text-ellipsis overflow-hidden'>{cat.origin}</p>
+                  </div>
+                </div>
+              </Link>
             ))
           }
         </div>
