@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/gree-commerce/static/css/main.b33fdf50.css",
-    "main.js": "/gree-commerce/static/js/main.fccb187d.js",
+    "main.css": "/gree-commerce/static/css/main.94b32226.css",
+    "main.js": "/gree-commerce/static/js/main.272146e5.js",
     "static/js/787.dcc73137.chunk.js": "/gree-commerce/static/js/787.dcc73137.chunk.js",
+    "static/media/haven2.jpg": "/gree-commerce/static/media/haven2.917a0012e5eae104781f.jpg",
+    "static/media/haven3.jpg": "/gree-commerce/static/media/haven3.4ff7cada440f8672df9f.jpg",
     "static/media/login.jpg": "/gree-commerce/static/media/login.a9853b90a0bd9667cf83.jpg",
+    "static/media/haven1.jpg": "/gree-commerce/static/media/haven1.3f1fab332fe51e1e8027.jpg",
     "static/media/caro1.jpg": "/gree-commerce/static/media/caro1.82d9b8aeed9853dbca25.jpg",
     "static/media/Satoshi-Variable.ttf": "/gree-commerce/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
     "static/media/spice5.jpg": "/gree-commerce/static/media/spice5.873535ab90759a26edc5.jpg",
     "static/media/spice4.jpg": "/gree-commerce/static/media/spice4.84b58e582e780c07dc02.jpg",
     "static/media/spice1.jpg": "/gree-commerce/static/media/spice1.75aec7f83125a46eb23f.jpg",
     "static/media/spice2.jpg": "/gree-commerce/static/media/spice2.b68e7da3b4f33aba8f7b.jpg",
+    "static/media/haven.jpg": "/gree-commerce/static/media/haven.bfef7b09674862d19718.jpg",
     "static/media/caro2.jpg": "/gree-commerce/static/media/caro2.043862aa624feb5d618e.jpg",
     "static/media/spice3.jpg": "/gree-commerce/static/media/spice3.8cc278a04512d03e3d9c.jpg",
     "static/media/Satoshi-Regular.ttf": "/gree-commerce/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
     "static/media/Satoshi-Bold.ttf": "/gree-commerce/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
     "static/media/google.png": "/gree-commerce/static/media/google.d3bd957f7bce9257e734.png",
+    "static/media/ginger.jpg": "/gree-commerce/static/media/ginger.558dc969ceb5db45ab35.jpg",
     "static/media/back.jpg": "/gree-commerce/static/media/back.5e2c886d0d5fa5802b93.jpg",
+    "static/media/haven4.jpg": "/gree-commerce/static/media/haven4.f295e0c9e1542299fa1a.jpg",
     "index.html": "/gree-commerce/index.html",
-    "main.b33fdf50.css.map": "/gree-commerce/static/css/main.b33fdf50.css.map",
-    "main.fccb187d.js.map": "/gree-commerce/static/js/main.fccb187d.js.map",
+    "main.94b32226.css.map": "/gree-commerce/static/css/main.94b32226.css.map",
+    "main.272146e5.js.map": "/gree-commerce/static/js/main.272146e5.js.map",
     "787.dcc73137.chunk.js.map": "/gree-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b33fdf50.css",
-    "static/js/main.fccb187d.js"
+    "static/css/main.94b32226.css",
+    "static/js/main.272146e5.js"
   ]
 }
