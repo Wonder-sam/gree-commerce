@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spice-haven/static/css/main.a827d32d.css",
-    "main.js": "/spice-haven/static/js/main.3715167f.js",
+    "main.css": "/spice-haven/static/css/main.2a332a18.css",
+    "main.js": "/spice-haven/static/js/main.53ae24f9.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
     "static/media/curry.jpg": "/spice-haven/static/media/curry.4ff7cada440f8672df9f.jpg",
@@ -32,12 +32,12 @@
     "static/media/kebab.jpg": "/spice-haven/static/media/kebab.2c9c3d2efabca7bee26b.jpg",
     "static/media/black.jpg": "/spice-haven/static/media/black.d243b8bd37ecf30d2661.jpg",
     "index.html": "/spice-haven/index.html",
-    "main.a827d32d.css.map": "/spice-haven/static/css/main.a827d32d.css.map",
-    "main.3715167f.js.map": "/spice-haven/static/js/main.3715167f.js.map",
+    "main.2a332a18.css.map": "/spice-haven/static/css/main.2a332a18.css.map",
+    "main.53ae24f9.js.map": "/spice-haven/static/js/main.53ae24f9.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a827d32d.css",
-    "static/js/main.3715167f.js"
+    "static/css/main.2a332a18.css",
+    "static/js/main.53ae24f9.js"
   ]
 }
