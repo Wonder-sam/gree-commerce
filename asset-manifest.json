@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spice-haven/static/css/main.dcec3b49.css",
-    "main.js": "/spice-haven/static/js/main.cd9fd2fe.js",
+    "main.css": "/spice-haven/static/css/main.b68c999b.css",
+    "main.js": "/spice-haven/static/js/main.2ab55d6d.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
     "static/media/curry.jpg": "/spice-haven/static/media/curry.4ff7cada440f8672df9f.jpg",
@@ -23,7 +23,6 @@
     "static/media/Satoshi-Bold.ttf": "/spice-haven/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
     "static/media/google.png": "/spice-haven/static/media/google.d3bd957f7bce9257e734.png",
     "static/media/kebabspice.jpg": "/spice-haven/static/media/kebabspice.53f354247d0e84f9f3f1.jpg",
-    "static/media/ginger.jpg": "/spice-haven/static/media/ginger.558dc969ceb5db45ab35.jpg",
     "static/media/barbercuespice.jpg": "/spice-haven/static/media/barbercuespice.4dbf8e624fcc0bbe781e.jpg",
     "static/media/back.jpg": "/spice-haven/static/media/back.5e2c886d0d5fa5802b93.jpg",
     "static/media/brownsugar.jpg": "/spice-haven/static/media/brownsugar.13ed0085c18e46a638e7.jpg",
@@ -34,12 +33,12 @@
     "static/media/kebab.jpg": "/spice-haven/static/media/kebab.2c9c3d2efabca7bee26b.jpg",
     "static/media/black.jpg": "/spice-haven/static/media/black.d243b8bd37ecf30d2661.jpg",
     "index.html": "/spice-haven/index.html",
-    "main.dcec3b49.css.map": "/spice-haven/static/css/main.dcec3b49.css.map",
-    "main.cd9fd2fe.js.map": "/spice-haven/static/js/main.cd9fd2fe.js.map",
+    "main.b68c999b.css.map": "/spice-haven/static/css/main.b68c999b.css.map",
+    "main.2ab55d6d.js.map": "/spice-haven/static/js/main.2ab55d6d.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcec3b49.css",
-    "static/js/main.cd9fd2fe.js"
+    "static/css/main.b68c999b.css",
+    "static/js/main.2ab55d6d.js"
   ]
 }
