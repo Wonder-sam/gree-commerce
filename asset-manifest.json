@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spice-haven/static/css/main.193b3365.css",
-    "main.js": "/spice-haven/static/js/main.a987f32c.js",
+    "main.css": "/spice-haven/static/css/main.cbb64a49.css",
+    "main.js": "/spice-haven/static/js/main.f709a382.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
     "static/media/mixedspices2.jpg": "/spice-haven/static/media/mixedspices2.09924e5fb42478f3686a.jpg",
@@ -21,6 +21,7 @@
     "static/media/spice2.jpg": "/spice-haven/static/media/spice2.b68e7da3b4f33aba8f7b.jpg",
     "static/media/kebabpowder.jpg": "/spice-haven/static/media/kebabpowder.76690359fee089864aa6.jpg",
     "static/media/jollof.jpg": "/spice-haven/static/media/jollof.3ede1ee2e32cfca203be.jpg",
+    "static/media/group1.jpg": "/spice-haven/static/media/group1.1c95701ad8e9db53da6d.jpg",
     "static/media/haven.jpg": "/spice-haven/static/media/haven.bfef7b09674862d19718.jpg",
     "static/media/spice3.jpg": "/spice-haven/static/media/spice3.8cc278a04512d03e3d9c.jpg",
     "static/media/rosemary1.jpg": "/spice-haven/static/media/rosemary1.205d8301ea42d0d2c355.jpg",
@@ -42,12 +43,12 @@
     "static/media/kebab.jpg": "/spice-haven/static/media/kebab.2c9c3d2efabca7bee26b.jpg",
     "static/media/gingermix1.jpg": "/spice-haven/static/media/gingermix1.2d04570d5be5829788bd.jpg",
     "index.html": "/spice-haven/index.html",
-    "main.193b3365.css.map": "/spice-haven/static/css/main.193b3365.css.map",
-    "main.a987f32c.js.map": "/spice-haven/static/js/main.a987f32c.js.map",
+    "main.cbb64a49.css.map": "/spice-haven/static/css/main.cbb64a49.css.map",
+    "main.f709a382.js.map": "/spice-haven/static/js/main.f709a382.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.193b3365.css",
-    "static/js/main.a987f32c.js"
+    "static/css/main.cbb64a49.css",
+    "static/js/main.f709a382.js"
   ]
 }
