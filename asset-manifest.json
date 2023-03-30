@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/spice-haven/static/css/main.193b3365.css",
-    "main.js": "/spice-haven/static/js/main.bc0fbbbd.js",
+    "main.js": "/spice-haven/static/js/main.a987f32c.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
+    "static/media/mixedspices2.jpg": "/spice-haven/static/media/mixedspices2.09924e5fb42478f3686a.jpg",
     "static/media/curry.jpg": "/spice-haven/static/media/curry.4ff7cada440f8672df9f.jpg",
     "static/media/chickenspice.jpg": "/spice-haven/static/media/chickenspice.6c9e58bfd6ad74a162e2.jpg",
     "static/media/login.jpg": "/spice-haven/static/media/login.a9853b90a0bd9667cf83.jpg",
@@ -15,6 +16,7 @@
     "static/media/spice4.jpg": "/spice-haven/static/media/spice4.84b58e582e780c07dc02.jpg",
     "static/media/group2.jpg": "/spice-haven/static/media/group2.dbcbf0e2552fc4295a86.jpg",
     "static/media/chilly.jpg": "/spice-haven/static/media/chilly.17376f1beb2ebf3be39a.jpg",
+    "static/media/mixedspices1.jpg": "/spice-haven/static/media/mixedspices1.411f2fe2ce445ebab146.jpg",
     "static/media/mixedspices.jpg": "/spice-haven/static/media/mixedspices.22995155db9aec93c0ec.jpg",
     "static/media/spice2.jpg": "/spice-haven/static/media/spice2.b68e7da3b4f33aba8f7b.jpg",
     "static/media/kebabpowder.jpg": "/spice-haven/static/media/kebabpowder.76690359fee089864aa6.jpg",
@@ -41,11 +43,11 @@
     "static/media/gingermix1.jpg": "/spice-haven/static/media/gingermix1.2d04570d5be5829788bd.jpg",
     "index.html": "/spice-haven/index.html",
     "main.193b3365.css.map": "/spice-haven/static/css/main.193b3365.css.map",
-    "main.bc0fbbbd.js.map": "/spice-haven/static/js/main.bc0fbbbd.js.map",
+    "main.a987f32c.js.map": "/spice-haven/static/js/main.a987f32c.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.193b3365.css",
-    "static/js/main.bc0fbbbd.js"
+    "static/js/main.a987f32c.js"
   ]
 }
