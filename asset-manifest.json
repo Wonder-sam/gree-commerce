@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spice-haven/static/css/main.cf72a95c.css",
-    "main.js": "/spice-haven/static/js/main.094e4c45.js",
+    "main.js": "/spice-haven/static/js/main.be35f63a.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
     "static/media/mixedspices2.jpg": "/spice-haven/static/media/mixedspices2.09924e5fb42478f3686a.jpg",
@@ -47,11 +47,11 @@
     "static/media/vodafone.jpg": "/spice-haven/static/media/vodafone.70c78fd2951518d649d4.jpg",
     "index.html": "/spice-haven/index.html",
     "main.cf72a95c.css.map": "/spice-haven/static/css/main.cf72a95c.css.map",
-    "main.094e4c45.js.map": "/spice-haven/static/js/main.094e4c45.js.map",
+    "main.be35f63a.js.map": "/spice-haven/static/js/main.be35f63a.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf72a95c.css",
-    "static/js/main.094e4c45.js"
+    "static/js/main.be35f63a.js"
   ]
 }
