@@ -1,9 +1,10 @@
 import React from 'react'
-import { Navigation, Scrollbar, A11y } from 'swiper';
+import { Navigation, Scrollbar, A11y, Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './App.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { caro } from './dummydata';
 import { Link, useLoaderData } from 'react-router-dom';
 
@@ -13,12 +14,13 @@ function App() {
   return (
     <div className="w-[90%] self-center">
       <Swiper
-        modules={[Navigation, Scrollbar, A11y]}
+        modules={[Navigation, Scrollbar, A11y, Autoplay, Pagination]}
         spaceBetween={0}
         slidesPerView={1}
         autoplay={{
-          delay: 5000
+          delay: 3000
         }}
+        pagination={true}
         className="w-full rounded-3xl border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.8)]"
         loop={true}
         navigation={true}
@@ -30,7 +32,6 @@ function App() {
          caro.map((car, index)=>(
             <SwiperSlide key={index}>
               <div className='relative flex items-center bg-[rgba(244,81,30,0.07)] w-full'>
-                <div className='fixed top-0 right-0 left-[50%] bottom-0 bg-[rgb(0,0,0,0.1)]'></div>
                 <img src={car.img} className="object-cover w-full xl:h-[40vw] h-[80vw]" alt={car.alt} />
               </div>
             </SwiperSlide>
@@ -41,18 +42,18 @@ function App() {
       <div className='mt-8 xl:mt-16 pb-8'>
         <div className='w-full pl-2 pr-2 py-2 mb-4 flex justify-center items-center'>
           <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
-          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] md:text-lg xl:text-2xl mx-8'>Haven Spices</p>
+          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] text-3xl md:text-lg xl:text-2xl mx-8'>Haven Spices</p>
           <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-8'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8'>
           {
             categories[0].map((cat,index)=>(
-              <Link to={`/Product/spices/${index}`}>
-                <div key={index} className='h-fit pb-2 bg-white rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
+              <Link to={`/Product/spices/${index}`} key={index}  >
+                <div className='h-[100%] pb-2 bg-white w-[42vw] md:w-[28vw] lg:w-[21vw] rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
                   <img src={cat.img} className="object-cover w-full aspect-square md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
-                  <div className="px-2 pt-2">
-                    <p className='font-[SatoshiVariable] text-[600]'>{cat.category}</p>
-                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] italic w-full max-h-[3em] text-ellipsis overflow-hidden'>{cat.description}</p>
+                  <div className="px-2 py-2 overflow-hidden text-ellipsis">
+                    <p className='h-[1.7em] font-[SatoshiVariable] text-[600] truncate'>{cat.category}</p>
+                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] h-[3em] italic w-full truncate '>{cat.description}</p>
                   </div>
                 </div>
               </Link>
@@ -64,18 +65,18 @@ function App() {
       <div className='mt-8 xl:mt-16 pb-8'>
         <div className='w-full pl-2 pr-2 py-2 mb-4 flex justify-center items-center'>
           <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
-          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] md:text-lg xl:text-2xl mx-8'>Recipe Packages</p>
+          <p className='font-[SatoshiVariable] text-[600] font-medium text-[#F4511E] text-3xl md:text-lg xl:text-2xl mx-8'>Haven Recipes</p>
           <div className='w-[20%] xl:w-[37%] bg-[#F4511E] h-[0.5vw]'/>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-8'>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8'>
           {
             categories[1].map((cat,index)=>(
-              <Link to={`/Product/recipes/${index}`}>
-                <div key={index} className='h-fit pb-2 bg-white rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
-                  <img src={cat.img} className="object-cover w-full aspect-square md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
-                  <div className="px-2 pt-2">
-                    <p className='font-[SatoshiVariable] text-[600]'>{cat.recipe}</p>
-                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] italic w-full max-h-[3em] text-ellipsis overflow-hidden'>{cat.origin}</p>
+              <Link to={`/Recipes/${index}`} key={index}  >
+                <div className='h-[100%] pb-2 bg-white w-[42vw] md:w-[28vw] lg:w-[21vw] rounded-lg overflow-hidden border border-gray shadow-[0px_0px_10px_rgba(217,225,244,0.76)]'>
+                  <img src={cat.image} className="object-cover w-full aspect-square md:h-[25vw] lg:h-[21vw] xl:h-[20vw] shrink-0 grow-0" alt=''/>
+                  <div className="px-2 py-2 overflow-hidden text-ellipsis">
+                    <p className='h-[1.7em] font-[SatoshiVariable] text-[600] truncate'>{cat.title}</p>
+                    <p className=' text-xs sm:text-sm font-[SatoshiRegular] w-[10em] h-[3em] italic w-full truncate '>{cat.ingredients}</p>
                   </div>
                 </div>
               </Link>

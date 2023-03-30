@@ -8,6 +8,8 @@ import './assets/fonts/Satoshi/Satoshi-Variable.ttf'
 import './assets/fonts/Satoshi/Satoshi-Regular.ttf'
 import './assets/fonts/Satoshi/Satoshi-Bold.ttf'
 
+
+// localStorage.setItem('cart',JSON.stringify(cart))
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>

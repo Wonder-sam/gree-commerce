@@ -38,18 +38,37 @@
 }
 
 .swiper-pagination {
-  text-align: left !important;
-  left: 11.7% !important;
-  bottom: 10% !important;
+  z-index: 2 !important;
+  bottom: 0% !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #FFFFFF !important;
-  width: 1vw !important;
-  height: 1vw !important;
+  background-color: orangered !important;
+  width: 3vw !important;
+  height: 3vw !important;
 }
 
 .swiper-pagination-bullet {
-  width: 1vw !important;
-  height: 1vw !important;
+  background-color: white !important;
+  width: 3vw !important;
+  height: 3vw !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: white !important
+  
+}
+
+@media (min-width: 768px) { 
+  .swiper-pagination-bullet-active {
+    background-color: orangered !important;
+    width: 1vw !important;
+    height: 1vw !important;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: white !important;
+    width: 1vw !important;
+    height: 1vw !important;
+  }
 }

@@ -1,11 +1,16 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { createBrowserRouter, redirect } from "react-router-dom";
 import App from "./App";
-import { categories, recipes } from "./dummydata";
+import ContactUs from "./ContactUs";
+import { cart, categories, recipes } from "./dummydata";
 import FilterDrawer from "./FilterDrawer";
 import { auth } from "./firebase";
 import Header from "./Header";
+import MyCart from "./MyCart";
+import ProductDetails from "./ProductDetails";
 import Products from "./Products";
+import RecipeDetails from "./RecipeDetails";
+import Recipes from "./Recipes";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
@@ -17,8 +22,18 @@ const getCategory = async (num) => {
     return categories[num].products;
 }
 
+const getCatProducts = async (name) => {
+    let result = categories.find(element=>element.category===name).products;
+    console.log(result)
+    return result;
+}
+
+const getRecipes = async () => {
+    return recipes;
+}
+
 const getRecipe = async (num) => {
-    return recipes[num].products;
+    return recipes[num];
 }
 
 const getProducts = async () => {
@@ -26,19 +41,25 @@ const getProducts = async () => {
     categories.forEach(categories => {
         products = products.concat(categories.products)
     });
-    recipes.forEach(recipe=>{
-        products = products.concat(recipe.products)
-    })
     return products;
 }
 
+const getProduct=async(cat, prod)=>{
+    let cats = await getCatProducts(cat)
+    let targetProduct = cats.find(element=>element.name===prod)
+    return targetProduct
+}
+
 const getUser = async () => {
-    onAuthStateChanged(auth, (user) => {
+    onAuthStateChanged(auth, user=>{
         if(user !==null){
             return user.displayName
         }
     })
     return null;
+}
+const getCart= async ()=>{
+    return cart;
 }
 
 const router = createBrowserRouter(
@@ -73,12 +94,31 @@ const router = createBrowserRouter(
                             element: <Products/>,
                             loader: ({params})=> getCategory(params.category)
                         },
-                        {
-                            path:"recipes/:name",
-                            element: <Products/>,
-                            loader: ({params})=> getRecipe(params.name)
-                        },
                     ]
+                },
+                {
+                    path:"/Product/spices/:category/:id",
+                    element: <ProductDetails/>,
+                    loader: ({params})=> getProduct(params.category, params.id)
+                },
+                {
+                    path: '/Recipes',
+                    element: <Recipes />,
+                    loader: getRecipes,
+                },
+                {
+                    path: '/Recipes/:id',
+                    element: <RecipeDetails />,
+                    loader: ({params})=>getRecipe(params.id)
+                },
+                {
+                    path: '/Cart',
+                    element: <MyCart />,
+                    loader: getCart
+                },
+                {
+                    path: '/ContactUs',
+                    element: <ContactUs />
                 }
             ]
         },
@@ -92,7 +132,7 @@ const router = createBrowserRouter(
         }
     ],
     {
-    basename: '/gree-commerce'
+    basename: '/spice-haven'
     }
   )
   

@@ -1,21 +1,17 @@
 import React from 'react'
-import { Outlet, useLocation } from 'react-router-dom';
-import { categories, recipes } from './dummydata';
+import { Outlet, useOutletContext } from 'react-router-dom';
+import { categories } from './dummydata';
+import {FiSearch} from 'react-icons/fi'
 
 export default function FilterDrawer () {
-    const here = useLocation();
-    const paths = here.pathname.split('/')
-    const gingerCheck = React.useRef(null);
-    const garlicCheck = React.useRef(null);
-    const waakyeCheck = React.useRef(null);
-    const pepperCheck = React.useRef(null);
-    const jollofCheck = React.useRef(null);
-    const riceCheck = React.useRef(null);
-    const beansCheck = React.useRef(null);
-    const shrimpCheck = React.useRef(null);
+    const kebabCheck = React.useRef(null);
+    const chickenCheck = React.useRef(null);
+    const beefCheck = React.useRef(null);
+    const barbercueCheck = React.useRef(null);
     const deliveryCheck = React.useRef(null);
     const filter = React.useRef(null)
-    const [fiterResult, setFilterResult] = React.useState([]);
+    const [filterResult, setFilterResult] = React.useState([]);
+    const [cartCount, setCartCount] = useOutletContext();
 
     const closeFilter=()=>{
         filter.current.classList.add('hidden')
@@ -27,48 +23,27 @@ export default function FilterDrawer () {
     const applyfilter=()=>{
         let selected=[]
 
-        if(gingerCheck.current.checked==true){
-            selected = selected.concat(categories.find(element=>element.category=='Ginger Spices').products)
+        if(kebabCheck.current.checked===true){
+            selected = selected.concat(categories.find(element=>element.category==='Kebab Spices').products)
         }
-        if(garlicCheck.current.checked==true){
-            selected = selected.concat(categories.find(element=>element.category=='Garlic Spices').products)
+        if(chickenCheck.current.checked===true){
+            selected = selected.concat(categories.find(element=>element.category==='Chicken Spices').products)
         }
-        if(pepperCheck.current.checked==true){
-            selected = selected.concat(categories.find(element=>element.category=='Pepper Spices').products)
+        if(beefCheck.current.checked===true){
+            selected = selected.concat(categories.find(element=>element.category==='Beef Spices').products)
         }
-        if(shrimpCheck.current.checked==true){
-            selected = selected.concat(categories.find(element=>element.category=='Shrimp Spices').products)
+        if(barbercueCheck.current.checked===true){
+            selected = selected.concat(categories.find(element=>element.category==='Barbercue Spices').products)
         }
-        if(jollofCheck.current.checked==true){
-            selected = selected.concat(recipes.find(element=>element.recipe=='Jollof Rice').products)
-        }
-        if(riceCheck.current.checked==true){
-            selected = selected.concat(recipes.find(element=>element.recipe=='Fried Rice').products)
-        }
-        if(beansCheck.current.checked==true){
-            selected = selected.concat(recipes.find(element=>element.recipe=='Beans (Gob3)').products)
-        }
-        if(waakyeCheck.current.checked==true){
-            selected = selected.concat(recipes.find(element=>element.recipe=='Waakye').products)
-        }
-        // if(deliveryCheck.current.checked==true){
-        //     console.log(categories.find(element=>element.category=='Ginger Spices'))
-        // }
+        console.log(selected)
         setFilterResult(selected)
+        closeFilter()
     }
 
-    const showValues=()=>{
-        // let phone = phoneCheck.current.checked
-        // let clothes = clothesCheck.current.checked
-        // let wearables = wearCheck.current.checked
-        // let bags = bagsCheck.current.checked
-        // let delivery = deliveryCheck.current.checked
-        // console.log(`${phone} ${clothes} ${wearables} ${bags} ${delivery} `)
-    }
    
     return (
-        <div className='w-full px-6 md:p-0 flex justify-around'>
-            <div ref={filter} className='hidden md:block w-full  absolute md:static md:w-[25%] bg-white p-4 md:p-0'>
+        <div className='w-full px-4 md:p-0 flex justify-around'>
+            <div ref={filter} className='top-0 hidden md:block w-full  absolute md:static md:w-[25%] bg-white p-4 md:p-0 z-[2]'>
                 <p className='md:hidden' onClick={()=>closeFilter()}>X</p>
                 <div className='w-full'>
                     <p className='text-[24px] leading-[50px]'>Filter</p>
@@ -77,17 +52,10 @@ export default function FilterDrawer () {
                         <hr className='my-2'></hr>
                         <p className='mt-4 text-[18px] w-full'>Spices</p>
                         <ul className='leading-[35px]'>
-                            <li className='font-light'><input type="checkbox"  ref={gingerCheck} /> Ginger Spice</li>
-                            <li className='font-light'><input type="checkbox" ref={garlicCheck} /> Garlic Spice</li>
-                            <li className='font-light'><input type="checkbox" ref={pepperCheck} /> Pepper Spice</li>
-                            <li className='font-light'><input type="checkbox" ref={shrimpCheck} /> Shrimp Spice</li>
-                        </ul>
-                        <p className='mt-4 text-[18px] w-full'>Recipes</p>
-                        <ul className='leading-[35px]'>
-                            <li className='font-light'><input type="checkbox"  ref={jollofCheck} /> Jollof</li>
-                            <li className='font-light'><input type="checkbox" ref={waakyeCheck} /> Waakye</li>
-                            <li className='font-light'><input type="checkbox" ref={beansCheck} /> Beans</li>
-                            <li className='font-light'><input type="checkbox" ref={riceCheck} /> Fried Rice</li>
+                            <li className='font-light'><input type="checkbox"  ref={kebabCheck} /> Kebab Spice</li>
+                            <li className='font-light'><input type="checkbox" ref={chickenCheck} /> Chicken Spice</li>
+                            <li className='font-light'><input type="checkbox" ref={beefCheck} /> Beef Spice</li>
+                            <li className='font-light'><input type="checkbox" ref={barbercueCheck} /> Barbercue Spice</li>
                         </ul>
                         <p className='mt-4 text-[20px] font-medium'>Delivery</p>
                         <hr className='my-2'></hr>
@@ -98,12 +66,15 @@ export default function FilterDrawer () {
                     </div>
                 </div>
             </div>
-            <div className='w-full md:w-[70%]'>
+            <div className='w-full md:w-[70%] h-max'>
                 <div className='w-full flex justify-between leading-[20px] md:leading-[50px] mb-[4%] md:mb-0'>
-                    <p className='text-[18px] font-bold text-[#F4511E]'>Products{'>'}{categories[paths[3]]?.category}</p>
+                    <div className='relative'>
+                        <FiSearch className='absolute top-[50%] -translate-y-[50%] left-2'/>
+                        <input type='text' placeholder='Search' className='placeholder:px-8 w-full h-[80%] rounded-md border border-[gray] focus:outline-blue-500 text-[18px]'/>
+                    </div>
                     <p onClick={()=>openFilter()} className=' md:hidden bg-gray-400 py-2 px-4 rounded-md text-center'>Filter</p>
                 </div>
-                <Outlet context={[fiterResult, setFilterResult]} />
+                <Outlet context={{filterResult, setFilterResult, cartCount, setCartCount}} />
             </div>
         </div>
     )

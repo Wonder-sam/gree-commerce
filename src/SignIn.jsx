@@ -4,7 +4,6 @@ import { auth } from "./firebase";
 import { NavLink, useNavigate } from "react-router-dom";
 import google from './assets/google.png'
 import login from './assets/login.jpg'
-import back from './assets/back.jpg'
 
 export default function SignIn() {
     const [email, setEmail] = React.useState('')
