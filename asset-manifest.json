@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spice-haven/static/css/main.39117de5.css",
-    "main.js": "/spice-haven/static/js/main.c508a543.js",
+    "main.css": "/spice-haven/static/css/main.ef924929.css",
+    "main.js": "/spice-haven/static/js/main.af1ee5ad.js",
     "static/js/787.dcc73137.chunk.js": "/spice-haven/static/js/787.dcc73137.chunk.js",
     "static/media/haven2.jpg": "/spice-haven/static/media/haven2.917a0012e5eae104781f.jpg",
     "static/media/mixedspices2.jpg": "/spice-haven/static/media/mixedspices2.09924e5fb42478f3686a.jpg",
@@ -47,12 +47,12 @@
     "static/media/airtelTigo.jpeg": "/spice-haven/static/media/airtelTigo.7d7030cf7d3e197b0031.jpeg",
     "static/media/vodafone.jpg": "/spice-haven/static/media/vodafone.70c78fd2951518d649d4.jpg",
     "index.html": "/spice-haven/index.html",
-    "main.39117de5.css.map": "/spice-haven/static/css/main.39117de5.css.map",
-    "main.c508a543.js.map": "/spice-haven/static/js/main.c508a543.js.map",
+    "main.ef924929.css.map": "/spice-haven/static/css/main.ef924929.css.map",
+    "main.af1ee5ad.js.map": "/spice-haven/static/js/main.af1ee5ad.js.map",
     "787.dcc73137.chunk.js.map": "/spice-haven/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39117de5.css",
-    "static/js/main.c508a543.js"
+    "static/css/main.ef924929.css",
+    "static/js/main.af1ee5ad.js"
   ]
 }
